@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notifications</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon/notification.png">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="socialbook.html"><img src="images/no back copy.png" class="logo" /></a>
+        <ul>
+          <a href="notification.html"><li><img src="images/notification.png" /></li></a>
+          <a href="support.html" target="_blank"><li><img src="images/video1.png" /></li></a>
+          <a href="chat.html"><li><img src="images/chat-4-32.png"></li></a>
+          
+          <a href="socialbook.html"><li><img src="images/home-5-24.png" /></li></a>
+          <a href="add.html" target="_blank"><li><img src="images/add-24.png" /></li></a>
+          
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsmenutoggle()">
+          <img src="images/profile-pic.png" />
+        </div>
+      </div>
+
+       <div class="settings-menu">
+         <div id="dark-btn">
+           <span></span>
+         </div>
+
+         <div class="setting-menu-inner">
+          <div class="user-profile">
+            <img class="img-2" src="./images/profile-pic.png">
+            <div>
+              <p>John Snow</p>
+              <a href="#">see your profile-pic</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img class="img-2" src="./images/feedback.png">
+            <div>
+              <p>Give feedback</p>
+              <a href="feedback.html" target="_blank">Help us to improve our page</a>
+            </div>
+          </div>
+          <hr>
+          <div class="setting-links">
+            <img class="settings-icon" src="./images/setting.png" alt="">
+            <a href="#">Settings</a> <img src="./images/arrow.png" width="10px">
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="./images/help.png" alt="">
+            <a href="support.html">Help & Support</a> <img src="./images/arrow.png" width="10px">
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="./images/share.png" alt="">
+            <a href="profile.html">About Us & About Team </a> <img src="./images/arrow.png" width="10px">
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="./images/logout.png" alt="">
+            <a href="Login and Signup.html">Logout</a> <img src="./images/arrow.png" width="10px">
+          </div>
+        </div>
+ 
+    </nav>
+    <section class="section-50">
+      <div class="container">
+        <h3 class="m-b-50 heading-line">
+          Notifications <i class="fa fa-bell text-muted"></i>
+        </h3>
+        <div class="notification-ui_dd-content">
+          <div class="notification-list notification-list--unread">
+            <div class="notification-list_content">
+              <div class="notification-list_img">
+                <img src="images/users/images.jfif" alt="user" />
+              </div>
+              <div class="notification-list_detail">
+                <p><b>Secretary</b> has Sends you a Reminder</p>
+                <p class="text-muted">
+                  Dear John, Your Maintetance Bill will be Due Tommorow.
+                </p>
+                
+                <a href="paymentgateaway.html" target="_blank"><button class="button" style="vertical-align:middle"><span>Pay </span></button></a>
+              
+
+                <p class="text-muted"><small>10 mins ago</small></p>
+              </div>
+            </div>
+            <div class="notification-list_feature-img">
+              <img src="images/features/warning.png" alt="Feature image" />
+            </div>
+          </div>
+          <div class="notification-list notification-list--unread">
+            <div class="notification-list_content">
+              <div class="notification-list_img">
+                <img src="images/users/download.jfif" alt="user" />
+              </div>
+              <div class="notification-list_detail">
+                <p><b>Manager</b> has issued a notice</p>
+                <p class="text-muted">
+                  Due to some major technical issues, Society will face a 15 per
+                  cent water cut till further instructions.
+                </p>
+                <p class="text-muted"><small>1 hr ago</small></p>
+              </div>
+            </div>
+            <div class="notification-list_feature-img">
+              <img src="images/features/warning1.png" alt="Feature image" />
+            </div>
+          </div>
+          <div class="notification-list notification-list--read">
+            <div class="notification-list_content">
+              <div class="notification-list_img">
+                <img src="images/users/userr2.jpg" alt="user" />
+              </div>
+              <div class="notification-list_detail">
+                <p><b>Romio</b> reacted to your post</p>
+                <p class="text-muted">Great work John!!</p>
+                <p class="text-muted"><small>6 hrs ago</small></p>
+              </div>
+            </div>
+            <div class="notification-list_feature-img">
+              <img src="images/features/random3.jpg" alt="Feature image" />
+            </div>
+          </div>
+          <div class="notification-list notification-list--read">
+            <div class="notification-list_content">
+              <div class="notification-list_img">
+                <img src="images/users/userb.jpg" alt="user" />
+              </div>
+              <div class="notification-list_detail">
+                <p><b>Brayden</b> reacted to your post</p>
+                <p class="text-muted">🔥🔥</p>
+                <p class="text-muted"><small>23 hrs ago</small></p>
+              </div>
+            </div>
+            <div class="notification-list_feature-img">
+              <img src="images/features/random4.jpg" alt="Feature image" />
+            </div>
+          </div>
+          <div class="notification-list notification-list--unread">
+            <div class="notification-list_content">
+              <div class="notification-list_img">
+                <img src="images/users/userp.jpg" alt="user" />
+              </div>
+              <div class="notification-list_detail">
+                <p><b>Prince</b> reacted to your post</p>
+                <p class="text-muted">See you soon bro</p>
+                <p class="text-muted"><small>1d ago</small></p>
+              </div>
+            </div>
+            <div class="notification-list_feature-img">
+              <img src="images/features/random2.jpg" alt="Feature image" />
+            </div>
+          </div>
+          <div class="notification-list notification-list--read">
+            <div class="notification-list_content">
+              <div class="notification-list_img">
+                <img src="images/users/user1.jpg" alt="user" />
+              </div>
+              <div class="notification-list_detail">
+                <p><b>Adi</b> reacted to your post</p>
+                <p class="text-muted">Congratulation Sir</p>
+                <p class="text-muted"><small>10 mins ago</small></p>
+              </div>
+            </div>
+            <div class="notification-list_feature-img">
+              <img src="images/features/random3.jpg" alt="Feature image" />
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn btn-success">Load more activity</a>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-------Dark mode button js ------>
+    <script src="dark-button.js"></script>
+  </body>
+</html>

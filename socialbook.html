@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon/home.png" type="image/x-icon">
+    <title>ApartConnect</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="socialbook.html"><img src="images/no back copy.png" class="logo" /></a>
+        <ul>
+          <a href="notification.html"><li><img src="images/notification.png" /></li></a>
+          <a href="support.html" target="_blank"><li><img src="images/video1.png" /></li></a>
+          <a href="chat.html"><li><img src="images/chat-4-32.png"></li></a>
+          
+          <a href="socialbook.html"><li><img src="images/home-5-24.png" /></li></a>
+          <a href="add.html" target="_blank"><li><img src="images/add-24.png" /></li></a>
+          
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsmenutoggle()">
+          <img src="images/profile-pic.png" />
+        </div>
+      </div>
+
+       <div class="settings-menu">
+         <div id="dark-btn" class="dark-btn-on">
+           <span></span>
+         </div>
+
+        <div class="setting-menu-inner">
+         <div class="user-profile">
+           <img class="img-2" src="./images/profile-pic.png">
+           <div>
+             <p>John Snow</p>
+             <a href="#">see your profile-pic</a>
+           </div>
+         </div>
+         <hr>
+         <div class="user-profile">
+           <img class="img-2" src="./images/feedback.png">
+           <div>
+             <p>Give feedback</p>
+             <a href="feedback.html" target="_blank">Help us to improve our page</a>
+           </div>
+         </div>
+         <hr>
+         <div class="setting-links">
+           <img class="settings-icon" src="./images/setting.png" alt="">
+           <a href="#">Settings</a> <img src="./images/arrow.png" width="10px">
+         </div>
+         <div class="setting-links">
+           <img class="settings-icon" src="./images/help.png" alt="">
+           <a href="support.html">Help & Support</a> <img src="./images/arrow.png" width="10px">
+         </div>
+         <div class="setting-links">
+           <img class="settings-icon" src="./images/share.png" alt="">
+           <a href="profile.html">About Us & About Team </a> <img src="./images/arrow.png" width="10px">
+         </div>
+         <div class="setting-links">
+           <img class="settings-icon" src="./images/logout.png" alt="">
+           <a href="Login and Signup.html">Logout</a> <img src="./images/arrow.png" width="10px">
+         </div>
+       </div>
+
+    </nav>
+    <div class="container">
+      <!--------------------------left-sidebar----------------- -->
+      <div class="left-slidebar">
+        <div class="imp-links">
+          <!-- <p class="shortcut-links">Your Shortcuts</p> -->
+          <br>
+          <a href="add.html"><img src="images/upload.png" />Add Post</a>
+          <a href="chat.html"><img src="images/icons8-bookmark-32.png" />Bookmark</a>
+          <a href="notification.html"><img src="images/friends.png" />Notifications</a>
+          <a href="chat.html"><img src="images/group.png" />Group</a> 
+          <a href="profile.html"><img src="images/icons8-user-30.png" />Profile</a>
+          <a href="#"><img src="images/more2.png" />See More</a>
+        </div>
+        <!-- <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"><img src="images/shortcut-1.png" />Web Developers</a>
+          <a href="#"><img src="images/shortcut-2.png" />Web Design course</a>
+          <a href="#"
+            ><img src="images/shortcut-3.png" />Full Stack Development</a
+          >
+          <a href="#"><img src="images/shortcut-4.png" />Website Experts</a>
+        </div> -->
+      </div>
+      <!--------------------------main-content----------------- -->
+      <!-- ---------------story container---------------- -->
+    <div class="main-content">
+        <div class="story-gallery">
+          <div class="story">
+            <img src="./images/upload.png" alt="">
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="./images/member-1.png" alt="">
+            <p>Dany</p>
+          </div>
+          <div class="story story3">
+            <img src="./images/member-2.png" alt="">
+            <p>Walt</p>
+          </div>
+          <div class="story story4">
+            <img src="./images/member-3.png" alt="">
+            <p>Skyler</p>
+          </div>
+          <div class="story story5">
+            <img src="./images/member-4.png" alt="">
+            <p>Jane</p>
+          </div>
+        </div>
+      <!-- ---------------w post container---------------- -->
+    <div class="wpc">
+      <div class="write-post-container">
+        <div class="user-profile">
+          <img src="./images/profile-pic.png">
+           <div>
+            <p>John Snow</p>
+            <small>Public</small>
+           </div>
+        </div>
+      </div>
+
+      <div class="post-input-container">
+        <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+        <div class="add-post-links">
+          <a href="#"><img src="./images/video.png">Live Video</a>
+          <a href="#"><img src="./images/photo.png">Photo/Video</a>
+          <a href="#"><img src="./images/feeling.png">Feeling/Activity</a>
+        </div>
+      </div>
+    </div>
+        <!-- ------------------------------------------------Feeds Container------------------------------------------------- -->
+
+        <div class="feed-cont-1">
+          <div class="feed-sub-cont">
+            <div class="user-profile">
+              <img src="./storyIMG/three.jpg">
+               <div>
+                  <div>
+                    <p>Walter White</p>
+                     <small>Posted on 9th march 2022 2:31 am</small>
+                  </div>
+                  <!-- <img class="more-img" src="./images/more-2.png" alt=""> -->
+               </div>
+            </div> 
+            <p>
+              Lorem ipsum dolor sit amet <span>#consectetur</span>adipisicing elit. <br>
+               Mollitia sed <span>#consequuntur</span> asperiores? A delectus provident.
+            </p>
+            <img class="feed-img1" src="./images/feed-image-1.png" alt="">
+            <!-- ------------ -->
+            <div class="like">
+               <div>
+                  <div>
+                   <img src="./images/like-blue.png" alt="">
+                   <p>79</p>
+                  </div>
+                  <div>
+                      <input type="text" placeholder="Comment">
+                  </div>
+                  <div>
+                     <img src="./images/share.png" alt="">
+                     <p>12</p>
+                  </div>
+               </div>
+
+               <div class="like-dp" >
+                  <img class="img-1" src="./images/profile-pic.png">
+                  <img src="./images/dropdown-icon.png" alt="">
+               </div>
+
+             <div>
+               
+            </div>
+           </div>
+          </div>
+        </div>
+
+        <!-- ------------------------------- -->
+
+        <div class="feed-cont-1">
+          <div class="feed-sub-cont">
+            <div class="user-profile">
+              <img src="./storyIMG/two.jpg">
+               <div>
+                <p>Dany</p>
+                <small>Posted on 7th march 2022 10:04 am</small>
+               </div>
+            </div> 
+            <p>
+              Lorem <span>#ipsum</span> dolor sit amet consectetur adipisicing elit. <br>
+              Mollitia sed consequuntur asperiores? A <span>#delectus</span> provident.
+            </p>
+            <img class="feed-img1" src="./images/feed-image-2.png" alt="">
+            <!-- ------------ -->
+            <div class="like">
+               <div>
+                  <div>
+                   <img src="./images/like-blue.png" alt="">
+                   <p>101</p>
+                  </div>
+                  <div>
+                      <input type="text" placeholder="Comment">
+                  </div>
+                  <div>
+                     <img src="./images/share.png" alt="">
+                     <p>19</p>
+                  </div>
+               </div>
+
+               <div class="like-dp" >
+                  <img class="img-1" src="./images/profile-pic.png">
+                  <img src="./images/dropdown-icon.png" alt="">
+               </div>
+
+             <div>
+               
+            </div>
+            <!-- ------------ -->
+            </div>
+
+          </div>
+        </div>
+
+        <!-- -------------- -->
+
+        <div class="feed-cont-1">
+          <div class="feed-sub-cont">
+            <div class="user-profile">
+              <img src="./storyIMG/four.jpg">
+               <div>
+                <p>Skyler</p>
+                <small>Posted on 5th march 2022 1:09 pm</small>
+               </div>
+            </div> 
+            <p>
+              <span>#amet</span> Lorem ipsum dolor si consectetur adipisicing elit. <br>
+               Mollitia provident sed asperiores? A delectus provident.
+            </p>
+            <img class="feed-img1" src="./images/feed-image-3.png" alt="">
+            <!-- ------------ -->
+            <div class="like">
+               <div>
+                  <div>
+                   <img src="./images/like-blue.png" alt="">
+                   <p>69</p>
+                  </div>
+                  <div>
+                      <input type="text" placeholder="Comment">
+                  </div>
+                  <div>
+                     <img src="./images/share.png" alt="">
+                     <p>7</p>
+                  </div>
+               </div>
+
+               <div class="like-dp" >
+                  <img class="img-1" src="./images/profile-pic.png">
+                  <img src="./images/dropdown-icon.png" alt="">
+               </div>
+
+             <div>
+               
+            </div>
+            <!-- ------------ -->
+            </div>
+
+          </div>
+        </div>
+        
+        <!-- -------------- -->
+
+        <div class="feed-cont-1">
+          <div class="feed-sub-cont">
+            <div class="user-profile">
+              <img src="./storyIMG/five.jpg">
+               <div>
+                <p>Jane</p>
+                <small>Posted on 2nd march 2022 5:45 pm</small>
+               </div>
+            </div> 
+            <p>
+              Lorem ipsum dolor sit amet adipisicing <span>#consectetur</span> elit. <br>
+               Mollitia sed <span>#consequuntur</span> asperiores? A delectus provident.
+            </p>
+            <img class="feed-img1" src="./images/feed-image-4.png" alt="">
+            <!-- ------------ -->
+            <div class="like">
+               <div>
+                  <div>
+                   <img src="./images/like-blue.png" alt="">
+                   <p>79</p>
+                  </div>
+                  <div>
+                      <input type="text" placeholder="Comment">
+                  </div>
+                  <div>
+                     <img src="./images/share.png" alt="">
+                     <p>12</p>
+                  </div>
+               </div>
+
+               <div class="like-dp" >
+                  <img class="img-1" src="./images/profile-pic.png">
+                  <img src="./images/dropdown-icon.png" alt="">
+               </div>
+
+             <div>
+               
+            </div>
+            <!-- ------------ -->
+            </div>
+
+          </div>
+        </div>
+
+      <!-- -------------- -->
+ 
+    </div>
+
+      <!--------------------------right-sidebar----------------- -->
+      <div class="right-slidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See all </a>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>1</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h3>Shiv Puja</h3>
+            <p>Temple</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>20</h3>
+            <span>April</span>
+          </div>
+          <div class="right-event">
+            <h3>Tree Plantation</h3>
+            <p>Society Ground</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>20</h3>
+            <span>May</span>
+          </div>
+          <div class="right-event">
+            <h3>Movie Night</h3>
+            <p>Auditorium</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>21</h3>
+            <span>June</span>
+          </div>
+          <div class="right-event">
+            <h3>Yoga Day </h3>
+            <p>Central Lawn</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>31</h3>
+            <span>August</span>
+          </div>
+          <div class="right-event">
+            <h3>Ganesh Pujja</h3>
+            <p>Temple</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="drop-menu.js"></script>
+  </body>
+</html>

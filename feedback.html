@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="feedback.css" />
+    <link rel="stylesheet" href="profile (1).css" />
+    <link rel="icon" type="image/x-icon" href="favicon/review.png">
+    <title>Let Us Know Your Feedback || Learning Robo</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="socialbook.html"><img src="images/no back copy.png" class="logo" /></a>
+        <ul>
+          <a href="notification.html"><li><img src="images/notification.png" /></li></a>
+          <a href="support.html" target="_blank"><li><img src="images/video1.png" /></li></a>
+          <a href="chat.html"><li><img src="images/chat-4-32.png"></li></a>
+          
+          <a href="socialbook.html"><li><img src="images/home-5-24.png" /></li></a>
+          <a href="add.html" target="_blank"><li><img src="images/add-24.png" /></li></a>
+          
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsmenutoggle()">
+          <img src="images/profile-pic.png" />
+        </div>
+      </div>
+
+       <div class="settings-menu">
+         <div id="dark-btn" class="dark-btn-on">
+           <span></span>
+         </div>
+
+         <div class="setting-menu-inner">
+          <div class="user-profile">
+            <img class="img-2" src="./images/profile-pic.png">
+            <div>
+              <p>John Snow</p>
+              <a href="#">see your profile-pic</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img class="img-2" src="./images/feedback.png">
+            <div>
+              <p>Give feedback</p>
+              <a href="feedback.html" target="_blank">Help us to improve our page</a>
+            </div>
+          </div>
+          <hr>
+          <div class="setting-links">
+            <img class="settings-icon" src="./images/setting.png" alt="">
+            <a href="#">Settings</a> <img src="./images/arrow.png" width="10px">
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="./images/help.png" alt="">
+            <a href="support.html">Help & Support</a> <img src="./images/arrow.png" width="10px">
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="./images/share.png" alt="">
+            <a href="profile.html">About Us & About Team </a> <img src="./images/arrow.png" width="10px">
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="./images/logout.png" alt="">
+            <a href="Login and Signup.html">Logout</a> <img src="./images/arrow.png" width="10px">
+          </div>
+        </div>
+ 
+    </nav>
+    <div id="panel" class="panel-container">
+      <strong
+        >How satisfied are you with our <br />
+        customer support performance?</strong
+      >
+      <div class="ratings-container">
+        <div class="rating">
+          <img
+            src="images/sad.png"
+            alt=""
+          />
+          <small>Unhappy</small>
+        </div>
+
+        <div class="rating">
+          <img
+            src="images/neutral.png"
+            alt=""
+          />
+          <small>Neutral</small>
+        </div>
+
+        <div class="rating active">
+          <img
+            src="images/happiness.png"
+            alt=""
+          />
+          <small>Satisfied</small>
+        </div>
+      </div>
+      <button class="btn" id="send">Send Review</button>
+    </div>
+
+    <script src="profile-dropdown.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
